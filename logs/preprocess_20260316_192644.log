@@ -1,0 +1,182 @@
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 日志文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\logs\preprocess_20260316_192644.log
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+############################################################
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 小说预处理流程启动
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ############################################################
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 源文件目录: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\ori_story
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 输出目录: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\processed_story
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 找到 10 个文件: *.txt
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 找到 10 个文件待处理
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 处理文件: 第10卷.txt
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功读取文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\ori_story\第10卷.txt (字符数: 168276)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 预处理完成: 第10卷.txt
+    原始长度: 168276 字符
+    处理后长度: 130913 字符
+    移除字符数: 37363
+    原始换行符: 8300
+    处理后换行符: 4154
+    换行符减少: 4146
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功写入文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\processed_story\第10卷.txt (字符数: 130913)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 处理完成: 第10卷.txt
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 处理文件: 第1卷.txt
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功读取文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\ori_story\第1卷.txt (字符数: 141996)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 预处理完成: 第1卷.txt
+    原始长度: 141996 字符
+    处理后长度: 113581 字符
+    移除字符数: 28415
+    原始换行符: 6311
+    处理后换行符: 3160
+    换行符减少: 3151
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功写入文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\processed_story\第1卷.txt (字符数: 113581)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 处理完成: 第1卷.txt
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 处理文件: 第2卷.txt
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功读取文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\ori_story\第2卷.txt (字符数: 195812)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 预处理完成: 第2卷.txt
+    原始长度: 195812 字符
+    处理后长度: 147982 字符
+    移除字符数: 47830
+    原始换行符: 10626
+    处理后换行符: 5317
+    换行符减少: 5309
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功写入文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\processed_story\第2卷.txt (字符数: 147982)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 处理完成: 第2卷.txt
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 处理文件: 第3卷.txt
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功读取文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\ori_story\第3卷.txt (字符数: 153422)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 预处理完成: 第3卷.txt
+    原始长度: 153422 字符
+    处理后长度: 121551 字符
+    移除字符数: 31871
+    原始换行符: 7079
+    处理后换行符: 3543
+    换行符减少: 3536
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功写入文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\processed_story\第3卷.txt (字符数: 121551)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 处理完成: 第3卷.txt
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 处理文件: 第4卷.txt
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功读取文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\ori_story\第4卷.txt (字符数: 160053)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 预处理完成: 第4卷.txt
+    原始长度: 160053 字符
+    处理后长度: 124273 字符
+    移除字符数: 35780
+    原始换行符: 7934
+    处理后换行符: 3971
+    换行符减少: 3963
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功写入文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\processed_story\第4卷.txt (字符数: 124273)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 处理完成: 第4卷.txt
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 处理文件: 第5卷.txt
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功读取文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\ori_story\第5卷.txt (字符数: 165299)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 预处理完成: 第5卷.txt
+    原始长度: 165299 字符
+    处理后长度: 130088 字符
+    移除字符数: 35211
+    原始换行符: 7821
+    处理后换行符: 3914
+    换行符减少: 3907
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功写入文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\processed_story\第5卷.txt (字符数: 130088)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 处理完成: 第5卷.txt
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 处理文件: 第6卷.txt
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功读取文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\ori_story\第6卷.txt (字符数: 145075)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 预处理完成: 第6卷.txt
+    原始长度: 145075 字符
+    处理后长度: 112969 字符
+    移除字符数: 32106
+    原始换行符: 7132
+    处理后换行符: 3570
+    换行符减少: 3562
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功写入文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\processed_story\第6卷.txt (字符数: 112969)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 处理完成: 第6卷.txt
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 处理文件: 第7卷.txt
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功读取文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\ori_story\第7卷.txt (字符数: 130689)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 预处理完成: 第7卷.txt
+    原始长度: 130689 字符
+    处理后长度: 100167 字符
+    移除字符数: 30522
+    原始换行符: 6778
+    处理后换行符: 3391
+    换行符减少: 3387
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功写入文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\processed_story\第7卷.txt (字符数: 100167)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 处理完成: 第7卷.txt
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 处理文件: 第8卷.txt
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功读取文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\ori_story\第8卷.txt (字符数: 115767)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 预处理完成: 第8卷.txt
+    原始长度: 115767 字符
+    处理后长度: 90641 字符
+    移除字符数: 25126
+    原始换行符: 5579
+    处理后换行符: 2792
+    换行符减少: 2787
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功写入文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\processed_story\第8卷.txt (字符数: 90641)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 处理完成: 第8卷.txt
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 处理文件: 第9卷.txt
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ============================================================
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功读取文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\ori_story\第9卷.txt (字符数: 134115)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 预处理完成: 第9卷.txt
+    原始长度: 134115 字符
+    处理后长度: 103667 字符
+    移除字符数: 30448
+    原始换行符: 6759
+    处理后换行符: 3384
+    换行符减少: 3375
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 成功写入文件: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\processed_story\第9卷.txt (字符数: 103667)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ✓ 处理完成: 第9卷.txt
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+############################################################
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 预处理流程完成
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ############################################################
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 总文件数: 10
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 成功: 10
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 失败: 0
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 
+✓ 成功处理的文件:
+2026-03-16 19:26:44 - PreprocessPipeline - INFO -   - 第10卷.txt (原: 168276 -> 处理后: 130913)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO -   - 第1卷.txt (原: 141996 -> 处理后: 113581)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO -   - 第2卷.txt (原: 195812 -> 处理后: 147982)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO -   - 第3卷.txt (原: 153422 -> 处理后: 121551)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO -   - 第4卷.txt (原: 160053 -> 处理后: 124273)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO -   - 第5卷.txt (原: 165299 -> 处理后: 130088)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO -   - 第6卷.txt (原: 145075 -> 处理后: 112969)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO -   - 第7卷.txt (原: 130689 -> 处理后: 100167)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO -   - 第8卷.txt (原: 115767 -> 处理后: 90641)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO -   - 第9卷.txt (原: 134115 -> 处理后: 103667)
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - ############################################################
+
+2026-03-16 19:26:44 - PreprocessPipeline - INFO - 统计信息已保存: D:\Desktop\笔记\2026寒假文件\add_work\novel_correct\logs\preprocess_stats_20260316_192644.json

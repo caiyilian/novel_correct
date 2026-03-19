@@ -1,0 +1,169 @@
+{
+  "total_files": 10,
+  "success_files": 10,
+  "failed_files": 0,
+  "start_time": "2026-03-19T14:12:35.385385",
+  "end_time": "2026-03-19T14:12:35.555861",
+  "files_detail": {
+    "第10卷.txt": {
+      "success": true,
+      "preprocess_stats": {
+        "original_length": 168276,
+        "processed_length": 130913,
+        "removed_chars": 37363,
+        "original_newlines": 8300,
+        "processed_newlines": 4154,
+        "newline_reduction": 4146
+      },
+      "errors": {
+        "read_error": null,
+        "preprocess_error": null,
+        "write_error": null
+      }
+    },
+    "第1卷.txt": {
+      "success": true,
+      "preprocess_stats": {
+        "original_length": 141996,
+        "processed_length": 113581,
+        "removed_chars": 28415,
+        "original_newlines": 6311,
+        "processed_newlines": 3160,
+        "newline_reduction": 3151
+      },
+      "errors": {
+        "read_error": null,
+        "preprocess_error": null,
+        "write_error": null
+      }
+    },
+    "第2卷.txt": {
+      "success": true,
+      "preprocess_stats": {
+        "original_length": 195812,
+        "processed_length": 147982,
+        "removed_chars": 47830,
+        "original_newlines": 10626,
+        "processed_newlines": 5317,
+        "newline_reduction": 5309
+      },
+      "errors": {
+        "read_error": null,
+        "preprocess_error": null,
+        "write_error": null
+      }
+    },
+    "第3卷.txt": {
+      "success": true,
+      "preprocess_stats": {
+        "original_length": 153422,
+        "processed_length": 121551,
+        "removed_chars": 31871,
+        "original_newlines": 7079,
+        "processed_newlines": 3543,
+        "newline_reduction": 3536
+      },
+      "errors": {
+        "read_error": null,
+        "preprocess_error": null,
+        "write_error": null
+      }
+    },
+    "第4卷.txt": {
+      "success": true,
+      "preprocess_stats": {
+        "original_length": 160053,
+        "processed_length": 124273,
+        "removed_chars": 35780,
+        "original_newlines": 7934,
+        "processed_newlines": 3971,
+        "newline_reduction": 3963
+      },
+      "errors": {
+        "read_error": null,
+        "preprocess_error": null,
+        "write_error": null
+      }
+    },
+    "第5卷.txt": {
+      "success": true,
+      "preprocess_stats": {
+        "original_length": 165299,
+        "processed_length": 130088,
+        "removed_chars": 35211,
+        "original_newlines": 7821,
+        "processed_newlines": 3914,
+        "newline_reduction": 3907
+      },
+      "errors": {
+        "read_error": null,
+        "preprocess_error": null,
+        "write_error": null
+      }
+    },
+    "第6卷.txt": {
+      "success": true,
+      "preprocess_stats": {
+        "original_length": 145075,
+        "processed_length": 112969,
+        "removed_chars": 32106,
+        "original_newlines": 7132,
+        "processed_newlines": 3570,
+        "newline_reduction": 3562
+      },
+      "errors": {
+        "read_error": null,
+        "preprocess_error": null,
+        "write_error": null
+      }
+    },
+    "第7卷.txt": {
+      "success": true,
+      "preprocess_stats": {
+        "original_length": 130689,
+        "processed_length": 100167,
+        "removed_chars": 30522,
+        "original_newlines": 6778,
+        "processed_newlines": 3391,
+        "newline_reduction": 3387
+      },
+      "errors": {
+        "read_error": null,
+        "preprocess_error": null,
+        "write_error": null
+      }
+    },
+    "第8卷.txt": {
+      "success": true,
+      "preprocess_stats": {
+        "original_length": 115767,
+        "processed_length": 90641,
+        "removed_chars": 25126,
+        "original_newlines": 5579,
+        "processed_newlines": 2792,
+        "newline_reduction": 2787
+      },
+      "errors": {
+        "read_error": null,
+        "preprocess_error": null,
+        "write_error": null
+      }
+    },
+    "第9卷.txt": {
+      "success": true,
+      "preprocess_stats": {
+        "original_length": 134115,
+        "processed_length": 103667,
+        "removed_chars": 30448,
+        "original_newlines": 6759,
+        "processed_newlines": 3384,
+        "newline_reduction": 3375
+      },
+      "errors": {
+        "read_error": null,
+        "preprocess_error": null,
+        "write_error": null
+      }
+    }
+  }
+}
