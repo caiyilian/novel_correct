@@ -290,7 +290,12 @@ def main():
             debug_print(f"💡 请确保已将你的原始小说文件放入 `{args.ori_dir}` 目录下，", debug=True)
             debug_print(f"💡 并先执行批量预处理：python main.py --preprocess_all", debug=True)
             return
-            
+        
+        try: # 排不排序都行
+            proc_files = sorted(proc_files,key=lambda x:int(x[1:-5]))
+        except:
+            pass
+        
         debug_print(f"共发现 {len(proc_files)} 个预处理文件，准备逐一处理...\n", debug=True)
         
         for idx, filename in enumerate(proc_files, 1):

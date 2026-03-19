@@ -47,7 +47,24 @@ def process_single_chunk(full_volume_text: str, start: int, end: int, context_pa
         return full_volume_text, 0
         
     current_chunk = normalize_whitespaces(current_chunk)
-    target_correction_area = current_chunk[context_padding_size:-context_padding_size]
+    
+    # ✨ 动态计算实际的前后context大小
+    # 处理开头：如果start接近文本开头，减少前context
+    context_front = context_padding_size
+    if start < context_padding_size:
+        context_front = start  # 前context最多到start位置
+    
+    # 处理结尾：如果end接近文本结尾，减少后context
+    remaining_length = len(full_volume_text) - end
+    context_back = context_padding_size
+    if remaining_length < context_padding_size:
+        context_back = remaining_length  # 后context最多到文本结尾
+    
+    # 使用动态的context_front和context_back来计算target_correction_area
+    if context_back > 0:
+        target_correction_area = current_chunk[context_front:-context_back]
+    else:
+        target_correction_area = current_chunk[context_front:]
     target_correction_area = normalize_whitespaces(target_correction_area)
     
     correction_prompt = build_correction_prompt(current_chunk, target_correction_area)
@@ -66,7 +83,7 @@ def process_single_chunk(full_volume_text: str, start: int, end: int, context_pa
     elif final_decision_status == 2:
         debug_print(f"⚠️ 测试通过（由 {chosen_model} 建议修改）", debug=debug)
         full_volume_text, length_diff = apply_chunk_correction(
-            full_volume_text, current_chunk, final_result_content, start, end, context_padding_size
+            full_volume_text, current_chunk, final_result_content, start, end, context_front, context_back
         )
         stats['change'] += 1
         

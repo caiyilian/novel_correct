@@ -73,7 +73,7 @@ def process_single_bracket_chunk(
     elif final_decision_status == 2:
         debug_print(f"⚠️ 测试通过（由 {chosen_model} 建议修改）", debug=debug)
         updated_text, _ = apply_chunk_correction(
-            full_volume_text, current_chunk, final_result_content, start_idx, end_idx, context_padding_size
+            full_volume_text, current_chunk, final_result_content, start_idx, end_idx, context_padding_size, context_padding_size
         )
         return True, updated_text
         

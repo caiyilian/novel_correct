@@ -77,7 +77,7 @@ def process_single_long_dialogue(
     elif final_decision_status == 2:
         debug_print(f"⚠️ 发现合并异常！由 {chosen_model} 建议拆分", debug=debug)
         updated_text, length_diff = apply_chunk_correction(
-            full_volume_text, current_chunk, final_result_content, start_idx, end_idx, context_padding_size
+            full_volume_text, current_chunk, final_result_content, start_idx, end_idx, context_padding_size, context_padding_size
         )
         log_content = f"########{txt_name}-成功拆分长对话########：\n[原内容]:\n{target_correction_area}\n\n[修改后]:\n{final_result_content}\n-------\n\n"
         log_file.write(log_content)

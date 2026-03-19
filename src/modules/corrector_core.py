@@ -90,11 +90,22 @@ def log_error_results(error_log_path: str, current_chunk: str, target_correction
     with open(log_filename, 'w', encoding='utf-8') as log_file:
         log_file.write(log_content)
 
-def apply_chunk_correction(full_volume_text: str, current_chunk: str, final_result_content: str, start: int, end: int, context_padding_size: int) -> Tuple[str, int]:
+def apply_chunk_correction(full_volume_text: str, current_chunk: str, final_result_content: str, start: int, end: int, context_front: int, context_back: int = None) -> Tuple[str, int]:
     """
     将模型修改后的内容融合回原文，并返回更新后的全文和步长增量
+    参数：
+    - context_front: 前置保护区长度
+    - context_back: 后置保护区长度（如果为None，则与context_front相同）
     """
-    fixed_chunk = current_chunk[:context_padding_size] + final_result_content + current_chunk[-context_padding_size:]
+    if context_back is None:
+        context_back = context_front
+    
+    # 处理后置保护区，如果为0则不截取后面部分
+    if context_back > 0:
+        fixed_chunk = current_chunk[:context_front] + final_result_content + current_chunk[-context_back:]
+    else:
+        fixed_chunk = current_chunk[:context_front] + final_result_content
+    
     updated_text = full_volume_text[:start] + fixed_chunk + full_volume_text[end:]
     length_diff = len(fixed_chunk) - len(current_chunk)
     return updated_text, length_diff
