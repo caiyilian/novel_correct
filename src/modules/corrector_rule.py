@@ -94,14 +94,15 @@ def process_single_targeted_chunk(
         log_error_results(error_log_path, current_chunk, target_correction_area, model_results)
         return False, full_volume_text
 
-def correct_single_volume_rule(input_file_path: str, output_dir: str = "fix_story_v3", chunk_sizes: Tuple[int, ...] = (800, 700, 600, 500), similarity_threshold: float = 0.9, debug: bool = False, min_models_to_agree: int = 1):
+def correct_single_volume_rule(input_file_path: str, output_dir: str = "fix_story_v3", chunk_sizes: Tuple[int, ...] = (800, 700, 600, 500), similarity_threshold: float = 0.9, debug: bool = False, min_models_to_agree: int = 1, max_stagnant_iters: int = 0) -> bool:
     """
     对外暴露的接口：基于规则检测的精准纠错模式 (Targeted Corrector)
     只有在检测到连续的相同符号时，才会呼叫大模型。
+    返回 bool: True 表示正常完成（全部修复或未发现错误），False 表示陷入死结或因长时间未推进进度而被强行中断。
     """
     if not os.path.exists(input_file_path):
         debug_print(f"\n[错误] 找不到输入文件: {input_file_path}", debug=debug)
-        return
+        return False
 
     filename = os.path.basename(input_file_path)
     txt_name = os.path.splitext(filename)[0]
@@ -122,6 +123,8 @@ def correct_single_volume_rule(input_file_path: str, output_dir: str = "fix_stor
     with open(process_log_path, 'w', encoding="utf-8") as log_file:
         iter_count = 0
         exit_while = False
+        success_flag = True
+        stagnant_count = 0
         
         # 估算进度（用文本长度）
         with tqdm(total=100, desc=f"{txt_name} 处理进度", unit="%") as pbar:
@@ -134,6 +137,7 @@ def correct_single_volume_rule(input_file_path: str, output_dir: str = "fix_stor
                     log_file.write(f"\n#### {txt_name} 已全部修改完毕 (未发现连续符号) #####\n")
                     pbar.update(100 - last_progress)
                     debug_print(f"\n🎉 {txt_name} 已全部修改完毕 (未发现连续符号)", debug=debug)
+                    success_flag = True
                     break
                     
                 search_indices = get_search_indices(error_char, now_index, last_index)
@@ -159,18 +163,32 @@ def correct_single_volume_rule(input_file_path: str, output_dir: str = "fix_stor
                 if not chunk_success:
                     # 所有尺度、所有中心点都尝试了依然没能成功修改
                     exit_while = True
+                    success_flag = False
                     debug_print(f"\n[警告] 在 {txt_name} 索引 {now_index} 附近发现死结，大模型无法修复，已中止该卷自动处理。", debug=debug)
                     continue
                     
                 iter_count += 1
                 current_progress = int((now_index / len(full_volume_text)) * 100)
+                
                 if current_progress > last_progress:
                     pbar.update(current_progress - last_progress)
                     last_progress = current_progress
+                    stagnant_count = 0  # 进度推进，停滞计数器清零
+                else:
+                    stagnant_count += 1 # 进度未推进，停滞计数器加一
+                    
+                # 检查是否触发短路机制
+                if max_stagnant_iters > 0 and stagnant_count >= max_stagnant_iters:
+                    exit_while = True
+                    success_flag = False
+                    debug_print(f"\n[警告] 规则扫描连续 {max_stagnant_iters} 次未推进进度，触发短路退出机制！", debug=debug)
+                    continue
                 
-                pbar.set_postfix(iter=iter_count, issue_at=f"{current_progress}%")
+                pbar.set_postfix(iter=iter_count, issue_at=f"{current_progress}%", stagnant=stagnant_count)
 
     final_output_path = os.path.join(output_dir, filename)
     with open(final_output_path, 'w', encoding='utf-16') as save_file:
         save_file.write(full_volume_text)    
     debug_print(f"\n✅ {filename} 精准纠错处理结束！已保存至 {final_output_path}", debug=debug)
+    
+    return success_flag
